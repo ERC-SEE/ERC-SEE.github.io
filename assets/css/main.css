@@ -19,6 +19,19 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
 .profile img { width: 100%; }
 
+
+figure {
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+figcaption {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
 /****************************************************************************** Publications *****************************************************************************/
 /*****************************************************************************
 * Projects
