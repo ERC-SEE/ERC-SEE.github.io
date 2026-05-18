@@ -198,15 +198,13 @@
     </a>
 </div>
 
-<div class="logo-container right">
+<div class="logos">
     <a href="https://erc.europa.eu/homepage" target="_blank">
         <img src="/assets/img/LOGO-ERC.png"
              alt="ERC Logo"
              class="additional-logo">
     </a>
-</div>
 
-<div class="logo-container center">
     <a href="https://research-and-innovation.ec.europa.eu/index_en" target="_blank">
         <img src="/assets/img/EU.svg.png"
              alt="EU Logo"
@@ -215,26 +213,17 @@
 </div>
 
 <style>
+  .logos {
+      display: flex;
+      justify-content: space-between; /* pushes one left, one right */
+      align-items: center;            /* vertically aligned */
+      width: 100%;
+      margin: 15px 0 20px 0;
+  }
+
   .additional-logo {
       height: 40px;
       width: auto;
-  }
-
-  .logo-container {
-      margin-top: 15px;
-      margin-bottom: 20px;
-  }
-
-  .left {
-      text-align: left;
-  }
-
-  .right {
-      text-align: right;
-  }
-
-  .center {
-      text-align: center;
   }
 </style>
   
