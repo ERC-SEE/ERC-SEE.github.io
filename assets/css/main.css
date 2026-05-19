@@ -20,23 +20,20 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 .profile img { width: 100%; }
 
 .team-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
 }
 
 .team-member {
-  width: calc(33% - 40px);
   text-align: center;
 }
 
-.team-member img {
+.team-member img.team {
   width: 100%;
-  aspect-ratio: 3 / 4; 
-  object-fit: cover;
-  object-position: top;
-  border-radius: 8px;
+  max-width: 180px;   /* adjust size as needed */
+  height: auto;
+  border-radius: 8px; /* optional */
 }
 
 .team-member h3 {
