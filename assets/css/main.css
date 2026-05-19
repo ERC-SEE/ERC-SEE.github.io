@@ -31,8 +31,14 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 }
 
 .team-member.solo {
-  width: calc(33% - 40px);   /* same width as the others */
-  text-align: center;
+  width: 100%;              /* forces a new row */
+  display: flex;
+  flex-direction: column;
+  align-items: center;      /* centers it horizontally */
+}
+
+.team-member.solo img {
+  width: calc(33% - 40px); /* same width as the others */
 }
 
 .team-member img {
