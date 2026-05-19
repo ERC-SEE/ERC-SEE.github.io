@@ -21,21 +21,16 @@ body.sticky-bottom-footer { padding-bottom: 0; }
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
-
-.team-member {
-  text-align: center;
+  grid-template-columns: repeat(5, 220px); /* exact width of each photo */
+  justify-content: center; /* centers the whole row */
+  gap: 25px;
 }
 
 .team-member img {
-  width: 220px;      /* bigger size */
-  height: 220px;     /* same height = same size */
-  object-fit: cover; /* crops neatly so all match */
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto;
 }
 
 .team-member h3 {
